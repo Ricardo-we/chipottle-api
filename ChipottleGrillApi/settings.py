@@ -59,7 +59,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
+    'https://regal-dieffenbachia-2996b1.netlify.app',
 ]
 
 ROOT_URLCONF = 'ChipottleGrillApi.urls'
