@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8bpv_6lq2a0une-uyp0dt&s6m_0nfb1v5hjas7ho22b*f6%f_e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['chipottle-grill-api.herokuapp.com']
 
 # Application definition
 
@@ -88,8 +88,12 @@ WSGI_APPLICATION = 'ChipottleGrillApi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd2cbg0ueu9n4bk',
+        'PORT': 5432,
+        'HOST': 'ec2-3-229-161-70.compute-1.amazonaws.com',
+        'USER': 'bjgkenqfrvwzun',
+        'PASSWORD': '96d884a643b004e161074606703f1570bfa2691f04bd9741d47e8e1587a75c6a'
     }
 }
 
